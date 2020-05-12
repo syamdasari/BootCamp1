@@ -1,1 +1,11 @@
-<h1><p>current-weather works! from component is created for demo purpose</p></h1>
+<div>
+  <div>
+    <span> {{current.city}},{{current.country}}</span>
+    <span> {{current.date | date:'full'}} </span>
+  </div>
+  <div>
+    <img [src]='current.image' />
+    <span>{{current.temperature | number:'1.0-0'}} &#8457;</span>
+    <span>{{current.description}}</span>
+  </div>
+</div>
